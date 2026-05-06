@@ -27,85 +27,108 @@
   </head>
   <body>
     <div class="container mt-4 mb-4">
-      <h1 class="display-4 bg-white py-4 rounded text-center">
-        Your Password is
-        <span id="score-result"></span>
+      <h1 class="display-6 bg-white py-4 rounded text-center mb-4" id="title">
+        Password Strength Checker
       </h1>
 
       <!-- Insert one Bootstrap card for each rule -->
-      <div class="d-flex flex-column gap-3">
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div><strong>RULE 1:</strong> Has at least 10 characters</div>
-            <span id="rule-1-result"></span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div>
-              <strong>RULE 2:</strong> Has at least one uppercase letter
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>At least 10 characters</div>
+              <span id="rule-1-result"></span>
             </div>
-            <span id="rule-2-result"></span>
           </div>
         </div>
 
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div>
-              <strong>RULE 3:</strong> Has at least one lowercase letter
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>At least one uppercase letter</div>
+              <span id="rule-2-result"></span>
             </div>
-            <span id="rule-3-result"></span>
           </div>
         </div>
 
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div><strong>RULE 4:</strong> Has at least one number</div>
-            <span id="rule-4-result"></span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div>
-              <strong>RULE 5:</strong> Has at least one special character
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>At least one lowercase letter</div>
+              <span id="rule-3-result"></span>
             </div>
-            <span id="rule-5-result"></span>
           </div>
         </div>
 
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div><strong>RULE 6:</strong> Does not contain a space</div>
-            <span id="rule-6-result"></span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div
-            class="card-body d-flex justify-content-between align-items-center"
-          >
-            <div>
-              <strong>RULE 7:</strong> Does not contain the text "password",
-              "test" or "1234"
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>At least one number</div>
+              <span id="rule-4-result"></span>
             </div>
-            <span id="rule-7-result"></span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>At least one special character (!@#$%^&*)</div>
+              <span id="rule-5-result"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>Does not contain a space</div>
+              <span id="rule-6-result"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>Does not contain common passwords</div>
+              <span id="rule-7-result"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div
+              class="card-body d-flex justify-content-between align-items-center"
+            >
+              <div>Does not contain 3 repeated characters in a row</div>
+              <span id="rule-8-result"></span>
+            </div>
           </div>
         </div>
       </div>
+
+      <h1
+        class="display-6 bg-white py-4 rounded text-center mt-4"
+        id="password-result"
+      >
+        Your password strength is
+        <span id="score-result"></span>
+      </h1>
     </div>
 
     <!-- Link Bootstrap JavaScript files -->
@@ -114,5 +137,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

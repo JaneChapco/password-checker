@@ -3,8 +3,33 @@
 }
 
 body {
-  background-color: #f3f4f6;
+  background-color: #cfd8ea;
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: 900px;
+}
+
+#title,
+.card,
+#password-result {
+  border: 1px solid #d6d9e0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.card-body div {
+  font-weight: 500;
+}
+
+#score-result {
+  margin-left: 0.5rem;
 }
